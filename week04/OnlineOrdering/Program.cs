@@ -21,6 +21,9 @@ class Program
         Console.WriteLine("===== ORDER 1 =====");
         Console.WriteLine("Packing Label:");
         Console.WriteLine(order1.GetPackingLabel());
+        Console.WriteLine("Shipping Label:");
+        Console.WriteLine("Shipping Address:");
+        Console.WriteLine(order1.GetShippingLabel());
         Console.WriteLine($"Total Price: ${order1.GetTotalPrice():F2}");
         Console.WriteLine();
 
@@ -28,6 +31,8 @@ class Program
         Console.WriteLine("Packing Label:");
         Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine("Shipping Label:");
+        Console.WriteLine("Shipping Address:");
+        Console.WriteLine(order2.GetShippingLabel());
         Console.WriteLine($"Total Price: ${order2.GetTotalPrice():F2}");
     }
 }
